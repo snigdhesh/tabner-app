@@ -1,0 +1,7 @@
+.row{
+    margin-top: 1%;
+}
+
+div.col-sm-2:first-child{
+    text-align: right;
+}

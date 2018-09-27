@@ -1,0 +1,48 @@
+<div class="container">
+  <h1>Registration</h1> <hr>
+
+
+  <form [formGroup]="registrationForm" (ngSubmit)="saveUsers()">
+    <div class="row">
+      <div class="col-sm-2">First Name</div>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+      <div class="col-sm-6"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">Email</div>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" formControlName="email">
+      </div>
+      <div class="col-sm-6"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">Password</div>
+      <div class="col-sm-4">
+        <input type="password" class="form-control" formControlName="password">
+      </div>
+      <div class="col-sm-6"></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="col-sm-6"></div>
+    </div>
+  </form>
+
+  
+  <br>
+  <br>
+  <br>
+  <div class="well">
+    {{registrationForm.value | json}}
+  </div>
+
+</div>
