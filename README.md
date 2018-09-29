@@ -1,3 +1,5 @@
+>First you need to rename package.txt to package.json when you clone the application  
+
 **AppName** : Tabner  
 **AppType** : Angular
 
